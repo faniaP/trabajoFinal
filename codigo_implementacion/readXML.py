@@ -22,23 +22,17 @@ def loadXML():
     territorio = ET.parse('Territorio.xml')
     arbol = territorio.getroot()
 
-#    for node in arbol:
-#        ids = [x.text for x in node.findall('id')]
-#        continente = [x.text for x in node.findall('continente')]
-#        tropas = [x.text for x in node.findall('tropas')]
-#        vecinos = [x.text for x in node.findall('vecino')]
-#        salida = [node[0].text]+ids+continente+tropas+vecinos
-#        print [node.attrib['nombre']]+[x.text for x in node]
-
+    listOfNodes = []
 
     for node in arbol:
         vecinos = [x.text for x in node.findall('vecino')]
         nodo = Node(node.attrib['nombre'], node.find('id').text, 
                     node.find('continente').text,node.find('tropas').text,
                     node.find('jugador').text,vecinos)
-        print nodo.tostring()
 
+        listOfNodes.append(nodo)
 
-        
+    for elem in listOfNodes:
+        elem.tostring()
 
 loadXML()

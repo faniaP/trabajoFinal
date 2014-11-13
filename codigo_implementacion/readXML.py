@@ -33,6 +33,8 @@ class territorio:
                         node.find('jugador').text,vecinos)
             
             self.listOfNodes.append(nodo)
+        for elem in self.listOfNodes:
+            elem.tostring()
             
     def getpais(self, nombre):
         for pais in self.listOfNodes:
@@ -43,9 +45,18 @@ class territorio:
         print 'Pais no valido dentro del territorio de juego'
         return None
     
+
+    def getvecinos(self, nombre):
+        return self.getpais(nombre).getvecinos()
         
-    def getInformacionVecinos(self, pais):
+    def getinfovecinos(self, pais):
         '''Devuelve la información de los vecinos del pais dado'''
-        espia = [vecinos for vecinos in ]
-        print espia
+        espiados = self.getvecinos(pais)
+        informacion = []
+        for espiado in espiados:
+            tmp = self.getpais(espiado)
+            informacion.append({'nombre' : tmp.getnombre(), 
+                                'id' : tmp.getid(), 'jugador' : tmp.getjugador(),
+                                'tropas' : tmp.gettropas()})
         
+        return informacion

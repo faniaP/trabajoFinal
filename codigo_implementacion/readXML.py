@@ -33,10 +33,9 @@ class territorio:
                         node.find('jugador').text,vecinos)
             
             self.listOfNodes.append(nodo)
-        for elem in self.listOfNodes:
-            elem.tostring()
             
     def getpais(self, nombre):
+        '''Regresa el pais con el nombre deseado, en caso de no existir, nulo'''
         for pais in self.listOfNodes:
             if pais.getnombre() == nombre:
                 return pais
@@ -47,6 +46,7 @@ class territorio:
     
 
     def getvecinos(self, nombre):
+        '''Regresa la lista de vecinos de un pais'''
         return self.getpais(nombre).getvecinos()
         
     def getinfovecinos(self, pais):
@@ -60,3 +60,7 @@ class territorio:
                                 'tropas' : tmp.gettropas()})
         
         return informacion
+
+    def settropasterritorio(self, pais, num_tropas):
+        '''Actualiza la cantidad de tropas en el pais deseado'''
+        self.getpais(pais).settropas(num_tropas)

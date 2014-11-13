@@ -4,9 +4,14 @@
 from readXML import *
 
 territorio = territorio()
-#territorio.getpais('Venezuela').tostring()
+territorio.getpais('Venezuela').tostring()
 
 #print territorio.getvecinos('Venezuela')
 
-print territorio.getinfovecinos('Venezuela')
+#print territorio.getinfovecinos('Venezuela')
 
+territorio.settropasterritorio('Venezuela', 50)
+
+territorio.getpais('Venezuela').tostring()
+
+print territorio.getinfovecinos('Brasil')

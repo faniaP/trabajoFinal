@@ -2,16 +2,21 @@
 # -*- coding: utf-8 _*_
 
 from readXML import *
+import copy as cp
 
-territorio = territorio()
-territorio.getpais('Venezuela').tostring()
+tablero = territorio()
+tablero.getpais('Venezuela').tostring()
 
-#print territorio.getvecinos('Venezuela')
+tableroc = cp.deepcopy(tablero)
 
-#print territorio.getinfovecinos('Venezuela')
 
-territorio.settropasterritorio('Venezuela', 50)
+print tablero.getvecinos('Venezuela'),'\n'
 
-territorio.getpais('Venezuela').tostring()
+print tablero.getinfovecinos('Venezuela'),'\n'
 
-print territorio.getinfovecinos('Brasil')
+tablero.settropasterritorio('Venezuela', 50),'\n'
+
+tablero.getpais('Venezuela').tostring(),'\n'
+
+tableroc.getpais('Venezuela').tostring(),'\n'
+

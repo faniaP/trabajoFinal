@@ -21,6 +21,8 @@ class territorio:
         Metodo encargado de generar el arbol que 
         se encuentra definido en el archivo .xml
         '''
+
+
         self.listOfNodes = []
         territorio = ET.parse('Territorio.xml')
         arbol = territorio.getroot()
@@ -33,6 +35,9 @@ class territorio:
                         node.find('jugador').text,vecinos)
             
             self.listOfNodes.append(nodo)
+
+            #        for elem in self.listOfNodes:
+            #elem.tostring()
             
     def getpais(self, nombre):
         '''Regresa el pais con el nombre deseado, en caso de no existir, nulo'''

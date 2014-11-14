@@ -27,20 +27,29 @@ class territorio:
         
         for node in arbol:
             vecinos = [x.text for x in node.findall('vecino')]
-            nodo = Node(node.attrib['nombre'], node.find('id').text, 
+            nodo = Node(node.attrib['nombre'], int(node.find('id').text), 
                         node.find('continente').text,
-                        node.find('tropas').text,
+                        int(node.find('tropas').text),
                         node.find('jugador').text,vecinos)
             
             self.listOfNodes.append(nodo)
             
-    def getpais(self, nombre):
-        '''Regresa el pais con el nombre deseado, en caso de no existir, nulo'''
-        for pais in self.listOfNodes:
-            if pais.getnombre() == nombre:
-                return pais
-            else:
-                continue
+    def getpais(self, llave):
+        '''Regresa el pais con la llave deseada, en caso de no existir, nulo'''
+        if type(llave) == str:
+            for pais in self.listOfNodes:
+                if pais.getnombre() == llave:
+                    return pais
+                else:
+                    continue
+        else: 
+            if type(llave) == int:
+                for pais in self.listOfNodes:
+                    if pais.getid() == llave:
+                        return pais
+                    else:
+                        continue
+                
         print 'Pais no valido dentro del territorio de juego'
         return None
     

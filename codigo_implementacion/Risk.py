@@ -6,8 +6,9 @@ import copy as cp
 
 tablero = territorio()
 tablero.getpais('Venezuela').tostring()
+tablero.getpais(1).tostring()
 
-print tablero.getpais('Venezuela').getEstado()
+print tablero.getpais('Venezuela').__class__
 
 tableroc = cp.deepcopy(tablero)
 
@@ -18,7 +19,4 @@ print tablero.getinfovecinos('Venezuela'),'\n'
 
 tablero.settropasterritorio('Venezuela', 50),'\n'
 
-tablero.getpais('Venezuela').tostring(),'\n'
-
-tableroc.getpais('Venezuela').tostring(),'\n'
 

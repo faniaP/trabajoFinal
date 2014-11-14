@@ -12,6 +12,7 @@ class Node:
         self.tropas = tropas
         self.jugador = jugador
         self.vecinos = vecinos
+        self.visitado = False
 
 
             
@@ -60,19 +61,27 @@ class Node:
         '''Regresa la lista de vecinos de éste nodo'''
         return self.vecinos
 
-	def settropas(self, tropasnuevas):
-		'''Asigna tropasnuevas al nodo'''
-		self.tropas = tropasnuevas
+    def settropas(self, tropasnuevas):
+        '''Asigna tropasnuevas al nodo'''
+        self.tropas = tropasnuevas
 	
-	def setjugador(self, jugadornuevo):
-		'''Asigna jugadornuevo al nodo'''
-		self.jugador = jugadornuevo
-
-	 
+    def setjugador(self, jugadornuevo):
+        '''Asigna jugadornuevo al nodo'''
+        self.jugador = jugadornuevo
         
     def setvecinos(self, vecinos):
         '''Actualiza la lista de vecinos de ese pais'''
         self.vecinos = vecinos
+
+
+    def getEstado(self):
+        '''Regresa el estado del nodo, True o False'''
+        return self.visitado
+
+
+    def setvisita(self, estado):
+        '''Actualiza el estado del nodo'''
+        self.visitado = estado
 
     def tostring(self):
         print self.nombre, self.id_pais, self.continente,self.tropas, self.jugador, self.vecinos

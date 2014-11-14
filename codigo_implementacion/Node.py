@@ -59,6 +59,16 @@ class Node:
     def getvecinos(self):
         '''Regresa la lista de vecinos de éste nodo'''
         return self.vecinos
+
+	def settropas(self, tropasnuevas):
+		'''Asigna tropasnuevas al nodo'''
+		self.tropas = tropasnuevas
+	
+	def setjugador(self, jugadornuevo):
+		'''Asigna jugadornuevo al nodo'''
+		self.jugador = jugadornuevo
+
+	 
         
     def setvecinos(self, vecinos):
         '''Actualiza la lista de vecinos de ese pais'''

@@ -9,6 +9,7 @@
 \usepackage{algorithmic}
 \input{spanishAlgorithmic}
 
+
 \begin{document}
 
 \title{\textbf{Implementaci\'on de Risk con algoritmo de Minimax.}}
@@ -61,13 +62,9 @@ Sin embargo mantendremos las dem\'as condiciones iniciales con respecto a las tr
 
 Teniendo ya esto definido, entonces, cada jugador tendr\'a un ejercito inicial de 35 tropas.
 
-%% necesitamos agregar el número de jugadores con los que decidimos acotarlo%%%%
-%% tambien necesitamos agregar lo de las tropas cuando reforamos los paises%%%
-
 \section{Descripci\'on del agente.}
 Aqu\'i es donde describimos el comportamiento del agente.
-%%% tipo de agente del proyecto%%%
-%%% sería un agente basado en modelo%%%
+
 
 \section{Funci\'on de evaluaci\'on e implementaci\'on.}
 
@@ -129,8 +126,6 @@ El algoritmo~\ref{c1} muestra el comportamiento de de $c_{1}$ sea cual quiera qu
 
 Continuamos por definir la funci\'on $c_{2}$ as\'i de esta manera observemos que:\\
 
-%%%% Este  hay que modificarlo y dice fernando que el lo 
-
 \begin{algorithm}
 \begin{algorithmic}[1]
 \ENSURE Determinar la imagen de la funci\'on $c_{2}$
@@ -145,16 +140,6 @@ Continuamos por definir la funci\'on $c_{2}$ as\'i de esta manera observemos que
 \end{algorithmic}
 \caption{Definici\'on de la funci\'on $c_{2}$}
 \label{c2}
-\end{algorithm}
-
-
-%%%%generacion de los posibles movimientos%%%%%
-
-\begin{algorithm}
-\begin{algorithmic}[1]
-\ENSURE Generaci\'on de los posibles movimientos del jugador
-\FORALL{$\nu$ $\in$ \textit{V_{jugador}}($\nu$)}
-\end{algorithmic}
 \end{algorithm}
 
 \section{Especificaciones del programa.}

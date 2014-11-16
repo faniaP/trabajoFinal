@@ -140,8 +140,6 @@ Continuamos por definir la funci\'on $c_{2}$ as\'i de esta manera observemos que
 \STATE{$J()$}
 \ENDIF
 \ENDFOR
-
-
 \end{algorithmic}
 \caption{Definici\'on de la funci\'on $c_{2}$}
 \label{c2}
@@ -152,10 +150,20 @@ Continuamos por definir la funci\'on $c_{2}$ as\'i de esta manera observemos que
 
 \begin{algorithm}
 \begin{algorithmic}[1]
-\ENSURE Generaci\'on de los posibles movimientos del jugador
-\FORALL{$\nu$ $\in$ \textit{V_{jugador}}($\nu$)}
+\ENSURE una gr\'afica de los posibles movimientos del jugador
+\FORALL{$\nu$ $\in$ $V_{jugador}$}
+\IF{$\nu$ $tiene VecinoVacio()$}
+\STATE{$v.avanza(g.node)$}
+\RETURN{$g'$}
+\ELSE 
+\STATE {$posiblesMovimientos(Jugador 2, g)$}
+\ENDIF
+\ENDFOR
 \end{algorithmic}
+\caption{Genera los posibles movimientos del jugador}
+\label{c3}
 \end{algorithm}
+
 
 \section{Especificaciones del programa.}
 

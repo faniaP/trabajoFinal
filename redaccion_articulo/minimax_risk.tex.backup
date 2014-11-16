@@ -211,39 +211,22 @@ asginarles su valor y por \'ultimo obtener la mejor estrateg\'ia.\\
 
 \begin{algorithm}
 \begin{algorithmic}[1]
-\REQUIRE Entero $p$ que representa la profundiad del \'arbol, Jugador $actual$, gr\'afica $G$ que representa el tablero actual,
+\REQUIRE Entero $p$ que representa la profundiad del \'arbol,Jugador $actual$, gr\'afica $G$ que representa el tablero actual,
 funcion de evaluacion $f$
 \ENSURE  Gr\'afica que representa la mejor jugada
 \STATE{$List\ movimientos$}
 \STATE{$mejorPuntuacion = 0$}
-\IF{$actual = 1$}
+\IF{$jugador = 1$}
 \STATE{$mejorPuntuacion = -\infty$}
 \ELSE
 \STATE{$mejorPuntuacion = \infty$}
 \ENDIF
 \STATE{$puntuacionActual = 0$}
 \STATE{$mejorMovimiento = null$}
-\IF{$movimientos.isEmpty()\ or\ profundidad = 0$}
+\IF{$movimientos.isEmpty()\ or\ profundad = 0$}
 \STATE{$mejorPuntuacion = f(G)$}
-\STATE{$mejor = G$}
 \ELSE
-\FORALL{$movimiento \in movimientos$}
-\IF{$actual = 1$}
-\STATE{$puntuacionActual = f(minimax(p-1,min,G,f))$}
-\IF{$puntuacionActual > mejorPuntuacion$}
-\STATE{$mejorPuntuacion = puntuacionActual$}
-\STATE{$mejor = movimiento$}
 \ENDIF
-\ELSE
-\STATE{$puntuacionActual = f(minimax(p-1,max,G,f))$}
-\IF{$puntuacionActual < mejorPuntuacion$}
-\STATE{$mejorPuntuacion = puntuacionActual$}
-\STATE{$mejor = movimiento$}
-\ENDIF
-\ENDIF
-\ENDFOR
-\ENDIF
-\RETURN{$mejor$}
 \end{algorithmic}
 \caption{Definici\'on de $minimax$}
 \label{minimax}

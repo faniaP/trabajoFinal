@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex minimax_risk"] 1416180149 "minimax_risk.aux" "minimax_risk.bbl" "minimax_risk" 1416180324
+["bibtex minimax_risk"] 1416183221 "minimax_risk.aux" "minimax_risk.bbl" "minimax_risk" 1416183263
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "minimax_risk.aux" 1416180323 2258 9a3552626a0605165cc598ed926d5e48 ""
+  "minimax_risk.aux" 1416183263 2258 e90c1dfa03a29665d3ee672ab4c66fdf ""
   "minimax_risk.bcf" 0 -1 0 ""
   "referencias.bib.bib" 0 -1 0 ""
   (generated)
   "minimax_risk.bbl"
   "minimax_risk.blg"
-["pdflatex"] 1416180323 "minimax_risk.tex" "minimax_risk.pdf" "minimax_risk" 1416180324
+["pdflatex"] 1416183262 "minimax_risk.tex" "minimax_risk.pdf" "minimax_risk" 1416183263
   "/etc/texmf/web2c/texmf.cnf" 1405019819 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -98,9 +98,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1374751034 31103 dbc49c70ca9e47fd7f4e40a14691afe7 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1405020168 1092724 68dfee8822f2be26b3ec35baed7917ed ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1405020026 3823577 bfa02123e585043236794842ed177d07 ""
-  "minimax_risk.aux" 1416180323 2258 9a3552626a0605165cc598ed926d5e48 ""
+  "minimax_risk.aux" 1416183263 2258 e90c1dfa03a29665d3ee672ab4c66fdf ""
   "minimax_risk.bbl" 1416178501 578 a6b02726f25d30218241881a49cee996 "bibtex minimax_risk"
-  "minimax_risk.tex" 1416180320 7343 688b77b9a1006e0f04ceccf4eb4b868d ""
+  "minimax_risk.tex" 1416183259 7349 36224d0f2ae8eba06ecf1fe27dcc301a ""
   "spanishAlgorithmic.tex" 1415744921 1303 78324d2b3c739ae3a5d8f62ec3b9b029 ""
   (generated)
   "minimax_risk.aux"

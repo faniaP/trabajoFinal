@@ -1,5 +1,4 @@
-\documentclass[12pt,twocolumn,draft]{article} 
-
+\documentclass[12pt]{article} 
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -13,34 +12,53 @@
 \begin{document}
 
 \title{\textbf{Implementaci\'on de Risk con algoritmo de Minimax.}}
-\author{Prieto, Estefan\'ia$^{[1]}$\\
-Galicia, Fernando$^{[1]}$\\
-Galv\'an, Antonio$^{[1]}$\\
-$^{[1]}$Facultad de Ciencias, U.N.A.M.\\
+\author{Prieto Larios, Estefan\'ia,$^{\spadesuit}$\\
+Galicia Mendoza, Fernando Abigail,$^{\spadesuit}$\\
+Galv\'an G\'amez, Edwin Antonio.$^{\spadesuit}$\\
+$^{\spadesuit}$Facultad de Ciencias, Universidad Nacional Aut\'onoma de M\'exico,\\ Circuito Exterior, C.U., A. Postal 70-264, 04510 M\'exico D.F., M\'exico. \\
 \\
-estefaniaprieto@ciencias.unam.mx\\
-fernandogamen@ciencias.unam.mx\\
-g.antonio@ciencias.unam.mx\\
-\date{21-Noviembre-2014}
+email: \textit{estefaniaprieto@ciencias.unam.mx}\\
+email: \textit{fernandogamen@ciencias.unam.mx}\\
+email: \textit{g.antonio@ciencias.unam.mx}\\
+%\date{21-Noviembre-2014}
 }
 
-\twocolumn[\begin{@twocolumnfalse}
+%%\twocolumn[\begin{@twocolumnfalse}
 \maketitle
 \thispagestyle{empty}
 \begin{abstract}
 A diferencia de los juegos de apuesta, donde el jugador se pregunta \textit{"?`Cu\'al es la mejor jugada para ganar un juego?"} y as\'i poder ser el due\~{n}o de un premio (generalmente un incentivo monetario), es bien sabido en la teor\'ia de juegos la motiva escenarios tales c\'omo el ajedrez, go, gato, etc. No existe tal pregunta, si no, \'esta se replantea una expresi\'on de la forma \textit{"?`Existe una mejor forma de jugar en tal escenario?"}.\\
 Por lo cu\'al se propone un modelo de Inteligencia Artificial para una versi\'on acotada del juego \textbf{Risk} basado en minimax, con base en estrategias muy complicadas implementadas por un experto, hasta muy b\'asicas diseñadas por un novato en el juego.\\
 \end{abstract}
-\end{@twocolumnfalse}]
+%%\end{@twocolumnfalse}]
 
 
 \section{Introducci\'on.}
 
-Hacer ac\'a la introducci\'on de minimax.
+La teor\'ia de juegos se puede interpretar c\'omo: \textit{"el estudio de las decisiones interdependientes"} \cite{teoriaDeJuegos}. Con lo cu\'al debemos observar que a diferencia a los juegos de azar, en teor\'ia de juegos se plantea que estrategia resulta mejor em contra del oponente y que no sea producto de una probabilidad. Por lo cu\'al en general no hay un mejor o peor juego para todos los juegos.\\
+
+Para este proyecto se ha optado por la estrateg\'ia de \textbf{\textit{Minimax}}, creada por el matem\'atico \textit{John von Neumann}. El cu\'al es un algoritmo para minimizar una estrateg\'ia en juegos con informaci\'on perfecta.\cite{minimax1} en el cual se espera que el se tenga c\'omo resultado el \textit{"mejor"} movimiento para cada jugador suponiendo que el contrincante realic\'e la jugada menos favorable.\\
+De tal forma que se espera que el juego siempre termine con tres posibles resultados, que el $jugador_{1}$ gane, que haga lo propio el $jugador_{2}$ o que el juego termine en empate.
+
+En el capitulo 8 se hablar\'a a cerca de la propuesta que hemos hecho para \'este juego implementando la idea del algoritmo \textbf{\textit{Minimax}}.
+
+\section{Juegos con informaci\'on imperfecta.}
+En este tipo de juego, en el que ambos jugadores conocen durante toda la duraci\'on de la partida el tablero de juego, se maneja entonces c\'omo un juego de informaci\'on perfecta, de tal forma que en todo momento puede modelar una estrategia que resulta ser la \textit{"optima"} para una configuraci\'on dada en el tablero\cite{informacionPerfecta}.\\
+Esperemos que el lector crea y se de cuenta que buscar una implementaci\'on para nuestro caso, resulta en un juego de informaci\'on imperfecta, pues el agente no podr\'a estar al tanto del tablero y al mismo tiempo estar generando una estrategia para vencer a su rival, por lo a continuaci\'on veremos que un juego con informaci\'on imperfecta es aquel que, alguno de los jugadores desconoce la estrategia que ha seleccionado su contrincante y adem\'as que el jugador desconoce la posici\'on en la que se encuentra dentro del conjunto de v\'ertices que le pertenecen\cite{informacionImperfecta}.
+
+Por lo que de \'esta forma, el lector se puede ir generando una idea de cuales van a ser las caracter\'isticas del agente para \'esta implementaci\'on.
 
 
-\section{Juegos con informaci\'on perfecta. [MODIFICAR A INFORMARCI\'ON IM-PERFECTA Y ARGUMENTAR EL POR QUE PODEMOS ADAPTARLO AS\'I.]}
-Explicar por que catalogamos al \textbf{RISK} c\'omo un juego de informaci\'on perfecta y por que hemos elegido esta implementaci\'on.
+\section{Descripci\'on del agente.}
+Con el contexto que hemos adquirido tempranamente a esta altura, entonces, es f\'acil predecir que el modelo para este agente ser\'a un agente basado en modelos.
+
+Dado que los agentes basados en modelos son eficientes al momento de manejar visibilidad parcial\cite{russell2004inteligencia} \textit{"He aqu\'i el sutil detalle de por que el juego, se ha convertido en un juego con informaci\'on imperfecta"} por lo cu\'al es un buen agente para esa implementaci\'on.
+
+Observemos el siguiente diagrama:
+
+
+
+
 
 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
@@ -60,44 +78,103 @@ Sin embargo mantendremos las dem\'as condiciones iniciales con respecto a las tr
 \item Cada \textit{Artiller\'ia} representa 10 unidades.
 \end{list}
 
-Teniendo ya esto definido, entonces, cada jugador tendr\'a un ejercito inicial de 35 tropas.
+Teniendo ya esto definido, entonces, cada jugador tendr\'a un ejercito inicial de 3 tropas, por cada invasi\'on
+se le asigna 3 tropas y por cada reforzamiento se le asigna 2 tropas.
 
-\section{Descripci\'on del agente.}
 
-En el entorno de nuestro problema, tenemos un \textit{agente reactivo basado en modelo}.
-Ya que el agente depende de lo que ha \textit{``vivido"} con anterioridad y con ello, puede
-\textit{``discernir"} del mundo actual que no conoce.
+\section{Marco te\'orico}
+
+Para una posible implementaci\'on del juego de \textbf{RISK} hemos ideado una gr\'afica donde cada nodo
+contiene como informaci\'on:
+\begin{itemize}
+ \item Nombre e identificador del pa\'is que se representa.
+ \item Nombre e identificador del jugador que tiene invadido a este pa\'is, en caso de no estar invadido es nulo.
+ \item N\'umero de tropas que tienen ocupado ese pa\'is, en caso de no estar invadido es cero.
+\end{itemize}
+Y cada arista representa la frontera de cada pa\'is.\\
+Recomendamos utilizar la representaci\'on por lista de adyacencias, ya que la generaci\'on de movimientos y
+la funci\'on de evaluaci\'on est\'an basados en el algoritmo \textit{BFS}, que es una b\'usqueda por amplitud.\\
+Buscamos por amplitud ya que nuestro objetivo es lograr obtener todos los paises en el menor de movimientos, 
+para esto necesitamos que el agente obtenga los paises con mayor n\'umero de vecinos, es decir, los v\'ertices
+com mayor grado, para as\'i poder encapsular al enemigo.
 
 \section{Generaci\'on de movimientos}
 
-\subsection{Reforzamientos}
+\subsection{Invasiones}
 
-Es m\'as f\'acil comenzar aqu\'i, ya que \'unicamente hay que tomar los v\'ertices de cada jugador
-y aumentar el n\'umero de tropas en 2.\\
-
-Para lograr esto, por cada nodo existir\'a una nueva gr\'afica con el nuevo n\'umero de tropas, lo
-cual significa que habr\'a tantas nuevas gr\'aficas como paises pertenezcan a cada jugador; para
+Por cada nodo existir\'a una nueva gr\'afica con el nuevo jugador y n\'umero de tropas asignado (3), lo
+cual significa que habr\'a tantas nuevas gr\'aficas como n\'umero de v\'ertices que tenga el tablero; para
 esto utilizaremos \textit{BFS}.
 
 \begin{algorithm}
 \begin{algorithmic}[1]
 \REQUIRE Gr\'afica $G$ que representa el tablero actual,Jugador $actual$
-\ENSURE Lista con todos los posibles reforzamientos
+\ENSURE Lista con todos los posibles invasiones
 \STATE{$Queue$ $q$}
-\STATE{$List reforzamientos$}
+\STATE{$List invasiones$}
+\STATE{$G^{\prime} = G$}
 \FORALL{$v \in G$}
 \STATE{$v.visitado = FALSE$}
 \ENDFOR
 \STATE{$v_{1}.visitado = FALSE$}\COMMENT{$v_{1}$ es el pa\'is con identificador 1}
-\STATE{$v_{1}.tropas = v_{1}.tropas+2$}
-\STATE{$reforzamientos.add(G)$}
+\IF{$v_{1}.jugador = NULL$}
+\STATE{$G^{\prime}.v_{1}.jugador = actual$}
+\STATE{$G^{\prime}.v_{1}.tropas = 3$}
+\STATE{$invasiones.add(G^{\prime})$}
+\ENDIF
 \STATE{$q.enqeue(v_{1})$}
 \WHILE{$q.isNotEmpty()$}
 \STATE{$v = q.remove()$}
 \FORALL{$u \in Vecinos(v)$}
 \IF{$u.visitado = FALSE$}
-\STATE{$u.tropas = u.tropas+2$}
-\STATE{$reforzamientos.add(G)$}
+\STATE{$G^{\prime} = G$}
+\IF{$v_{1}.jugador = NULL$}
+\STATE{$G^{\prime}.u.jugador = actual$}
+\STATE{$G^{\prime}.u.tropas = 3$}
+\STATE{$invasiones.add(G^{\prime})$}
+\ENDIF
+\STATE{$u.visitado = TRUE$}
+\STATE{$q.enqeue(u)$}
+\ENDIF
+\ENDFOR
+\ENDWHILE
+\RETURN $invasiones$
+\end{algorithmic}
+\caption{Definici\'on de la funci\'on $invasiones$}
+\label{invasiones}
+\end{algorithm}
+
+\subsection{Reforzamientos}
+
+Por cada nodo existir\'a una nueva gr\'afica con el nuevo n\'umero de tropas (2), lo
+cual significa que habr\'a tantas nuevas gr\'aficas como paises pertenezcan a cada jugador; para
+esto utilizaremos \textit{BFS}.
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+\REQUIRE Gr\'afica $G$ que representa el tablero actual
+\ENSURE Lista con todos los posibles reforzamientos
+\STATE{$Queue$ $q$}
+\STATE{$List reforzamientos$}
+\STATE{$G^{\prime} = G$}
+\FORALL{$v \in G$}
+\STATE{$v.visitado = FALSE$}
+\ENDFOR
+\STATE{$v_{1}.visitado = FALSE$}\COMMENT{$v_{1}$ es el pa\'is con identificador 1}
+\IF{$G^{\prime}.v_{1}.jugador \neq NULL$}
+\STATE{$G^{\prime}.v_{1}.tropas = v_{1}.tropas+2$}
+\ENDIF
+\STATE{$reforzamientos.add(G^{\prime})$}
+\STATE{$q.enqeue(v_{1})$}
+\WHILE{$q.isNotEmpty()$}
+\STATE{$v = q.remove()$}
+\FORALL{$u \in Vecinos(v)$}
+\IF{$u.visitado = FALSE$}
+\STATE{$G^{\prime} = G$}
+\IF{$G^{\prime}.u.jugador \neq NULL$}
+\STATE{$G^{\prime}.u.tropas = u.tropas+2$}
+\STATE{$reforzamientos.add(G^{\prime})$}
+\ENDIF
 \STATE{$u.visitado = TRUE$}
 \STATE{$q.enqeue(u)$}
 \ENDIF
@@ -109,87 +186,75 @@ esto utilizaremos \textit{BFS}.
 \label{reforzamientos}
 \end{algorithm}
 
-\section{Funci\'on de evaluaci\'on.}
+\subsection{Ataques}
 
-Dado que el juego de risk consiste en dos partes, entonces se necesitan dos series de estrategias: la
-primera para la invasi\'on de territorio y la segunda parte consiste en reforzamiento y ataque;
-por lo que se necesitan dos funciones de evaluaci\'on.
-
-\subsection{Invasi\'on}
-
-La estrateg\'ia consiste en invadir los paises con mayor n\'umero de vecinos y poder encapsular al enemigo.
-
-$$ 
-F(n)= \left\{\begin{array}{c l}
-  \infty\ \textit{Max\ obtiene\ los\ paises\ con\ mayor\ grado.}\\
-  -\infty\ \textit{Min\ obtiene\ los\ paises\ con\ mayor\ grado.}\\
-  \mathtt{invasion(n)}\ \textit{e.o.c.}
-\end{array}
-\right.
-$$
-
-Donde:\\
-
-$\mathtt{invasion}$ por medio de \textbf{BFS} suma al valor de la funci\'on de evaluaci\'on: el
-grado de cada v\'ertice, el total de vecinos no ocupados por ninguno de los jugadores; y por \'ultimo
-resta los vecinos ocupados por \textbf{min} por cada pa\'is de \textbf{MAX}.\\
+Para cada nodo exisitir\'a nuevas gr\'aficas, una donde el ataque fue exitoso y se le asginar\'a una tropa donde
+provino el ataque, y otra donde el ataque no fue existoso y se elimina el n\'umero de tropas con respecto al n\'umero
+de tropas del atacado.
 
 \begin{algorithm}
 \begin{algorithmic}[1]
-\REQUIRE La gr\'afica que representa el tablero
-\ENSURE Es el entero descrito anteriormente
-\STATE{$puntuacion = 0$}
+\REQUIRE Gr\'afica $G$ que representa el tablero actual, Jugador $actual$
+\ENSURE Lista con todos los posibles ataques
 \STATE{$Queue$ $q$}
+\STATE{$List ataques$}
 \FORALL{$v \in G$}
 \STATE{$v.visitado = FALSE$}
 \ENDFOR
 \STATE{$v_{1}.visitado = FALSE$}\COMMENT{$v_{1}$ es el pa\'is con identificador 1}
-\STATE{$puntuacion = v_{1}.grado$}
 \STATE{$q.enqeue(v_{1})$}
 \WHILE{$q.isNotEmpty()$}
 \STATE{$v = q.remove()$}
 \FORALL{$u \in Vecinos(v)$}
 \IF{$u.visitado = FALSE$}
-\IF{$puntuacion < u.grado$}
-\STATE{$puntuacion = u.grado$}
+\STATE{$G^{\prime} = G$}
+\IF{$G^{\prime}.v.jugador = actual\ and\ G^{\prime}.u.jugador \neq NULL\ and\ G^{\prime}.u.jugador \neq actual$}
+\IF{$G^{\prime}.v.tropas >= G^{\prime}.u.tropas$}
+\STATE{$p = generaDados()$}\COMMENT{$generaDados()$ es una funci\'on 
+que genera dos n\'umeros aleatorios y realiza su resta, representa los dados}
+\IF{$p > 0$}
+\STATE{$G^{\prime}.u.jugador = actual$}
+\STATE{$G^{\prime}.u.tropas = 1$}
+\STATE{$ataques.add(G^{\prime})$}
+\ELSE
+\STATE{$G^{\prime}.v.tropas = G^{\prime}.v.tropas - G^{\prime}.u.tropas$}
+\STATE{$ataques.add(G^{\prime})$}
 \ENDIF
-\IF{$v.Jugador = MAX\ and\ Jugador = MIN$}
-\STATE{$puntuacion = puntuacion - 1$}
+\ENDIF
 \ENDIF
 \STATE{$u.visitado = TRUE$}
 \STATE{$q.enqeue(u)$}
 \ENDIF
 \ENDFOR
 \ENDWHILE
-\RETURN $puntuacion$
+\RETURN $ataques$
 \end{algorithmic}
-\caption{Definici\'on de la funci\'on $inavsion$}
-\label{invasion}
+\caption{Definici\'on de la funci\'on $ataques$}
+\label{ataques}
 \end{algorithm}
 
-\subsection{Reforzamiento y ataque}
+\section{Funci\'on de evaluaci\'on.}
 
 La estrateg\'ia consiste en tomar cada pa\'is ocupado por \textbf{MAX} y ver a todos sus vecinos,
+se sumar\'a el grado de cada v\'ertice y se resta los que pertenecen al oponente (esto para la parte de invasi\'on), acto seguido
 se realiza una comparac\'ion de que paises son del oponente y cuanto se diferencian las tropas, para así tomar su
 mejor desici\'on de ataque o reforzamiento.
 
 $$ 
-F(n)= \left\{\begin{array}{c l}
+funcionEval(G)= \left\{\begin{array}{c l}
   \infty\ \textit{Max\ resulta\ ser\ ganador.}\\
   -\infty\ \textit{Min\ resulta\ ser\ ganador.}\\
-  \mathtt{reforzaAtaca(n)}\ \textit{e.o.c.}
+  \mathtt{invadeReforzaAtaca(G)}\ \textit{e.o.c.}
 \end{array}
 \right.
 $$
 
 Donde:\\
 
-$\mathtt{reforzaAtaca}$ es un algoritmo que por medio de una modificaici\'on a \textit{BFS} cuenta
-las tropas y paises de cada jugador, suma los pertenecientes al jugador \textbf{MAX} y resta los del oponente 
-\textbf{min}, tambi\'en por cada pa\'is de \textbf{MAX} resta los vecinos que pertenezcan a \textbf{min}, por otra
-parte bajo esa misma idea compara el n\'umero de tropas.\\
-
-
+$\mathtt{invadeReforzaAtaca}$ es un algoritmo que por medio de una modificaici\'on a \textit{BFS} cuenta
+las tropas y paises de cada jugador, suma los grados de cada v\'ertice, suma los pertenecientes al jugador \textbf{MAX} 
+y resta los del oponente \textbf{min}, tambi\'en por cada pa\'is de \textbf{MAX} resta los vecinos que pertenezcan 
+a \textbf{min}, por otra parte bajo esa misma idea compara el n\'umero de tropas.\\
 
 \begin{algorithm}
 \begin{algorithmic}[1]
@@ -202,17 +267,17 @@ parte bajo esa misma idea compara el n\'umero de tropas.\\
 \ENDFOR
 \COMMENT{$v_{1}$ es el pa\'is con identificador 1}
 \STATE{$v_{1}.visitado = FALSE$}
-\IF{$v_{1}.jugador = MAX$}
-\STATE{$puntuacion = puntuacion + u.daTropas() + 1$}
-\ENDIF
-\IF{$v_{1}.jugador = MIN$}
-\STATE{$puntuacion = puntuacion - u.daTropas() - 1$}
-\ENDIF
 \STATE{$q.enqeue(v_{1})$}
 \WHILE{$q.isNotEmpty()$}
 \STATE{$v = q.remove()$}
 \FORALL{$u \in Vecinos(v)$}
 \IF{$u.visitado = FALSE$}
+\IF{$u.jugador = NULL\ and\ puntuacion < u.grado$}
+\STATE{$puntuacion = puntuacion + u.grado$}
+\ENDIF
+\IF{$v.Jugador = MAX\ and\ Jugador = MIN$}
+\STATE{$puntuacion = puntuacion - 1$}
+\ENDIF
 \IF{$u.jugador = MAX$}
 \STATE{$puntuacion = puntuacion + u.daTropas() + 1$}
 \ENDIF
@@ -235,12 +300,9 @@ parte bajo esa misma idea compara el n\'umero de tropas.\\
 \ENDWHILE
 \RETURN $puntuacion$
 \end{algorithmic}
-\caption{Definici\'on de la funci\'on $reforzaAtaca$}
-\label{reforzaAtaca}
+\caption{Definici\'on de la funci\'on $invadeReforzaAtaca$}
+\label{invadeReforzaAtaca}
 \end{algorithm}
-
-
-
 
 \section{Minimax}
 
@@ -256,13 +318,17 @@ nodo del \'arbol y hacer un recorrido \textit{DFS} para obtener la mejor estrate
 Dado que esto requiere una gran cantidad de espacio y tiempo, entonces la pr\'actica usual es realizar
 el algoritmo \textit{minimax} de forma recursiva, tal que, vaya simulando la creaci\'on de las ramas y despu\'es
 asginarles su valor y por \'ultimo obtener la mejor estrateg\'ia.\\
-
+\newpage
 \begin{algorithm}
 \begin{algorithmic}[1]
-\REQUIRE Entero $p$ que representa la profundiad del \'arbol, Jugador $actual$, gr\'afica $G$ que representa el tablero actual,
-funcion de evaluacion $f$
+\REQUIRE Entero $p$ que representa la profundiad del \'arbol, Jugador $actual$, gr\'afica $G$ que representa el tablero actual
 \ENSURE  Gr\'afica que representa la mejor jugada
 \STATE{$List\ movimientos$}
+\IF{$graficaLlena(G)$}
+\STATE{$movimientos = concatena(ataques(G,actual),reforzamientos(G))$}
+\ELSE
+\STATE{$movimientos = invasiones(G,actual)$}
+\ENDIF
 \STATE{$mejorPuntuacion = 0$}
 \IF{$actual = 1$}
 \STATE{$mejorPuntuacion = -\infty$}
@@ -272,71 +338,50 @@ funcion de evaluacion $f$
 \STATE{$puntuacionActual = 0$}
 \STATE{$mejorMovimiento = null$}
 \IF{$movimientos.isEmpty()\ or\ profundidad = 0$}
-\STATE{$mejorPuntuacion = f(G)$}
+\STATE{$mejorPuntuacion = funcionEval(G)$}
 \STATE{$mejor = G$}
 \ELSE
 \FORALL{$movimiento \in movimientos$}
 \IF{$actual = 1$}
-\STATE{$puntuacionActual = f(minimax(p-1,min,G,f))$}
+\STATE{$puntuacionActual = funcionEval(minimax(p-1,min,G,f))$}
 \IF{$puntuacionActual > mejorPuntuacion$}
 \STATE{$mejorPuntuacion = puntuacionActual$}
 \STATE{$mejor = movimiento$}
 \ENDIF
 \ELSE
-\STATE{$puntuacionActual = f(minimax(p-1,max,G,f))$}
+\STATE{$puntuacionActual = funcionEval(minimax(p-1,max,G,f))$}
 \IF{$puntuacionActual < mejorPuntuacion$}
 \STATE{$mejorPuntuacion = puntuacionActual$}
 \STATE{$mejor = movimiento$}
 \ENDIF
 \ENDIF
 \ENDFOR
-<<<<<<< HEAD
-<<<<<<< HEAD
 \ENDIF
 \RETURN{$mejor$}
-=======
->>>>>>> faniaP-master
-=======
-\ENDIF
-\RETURN{$mejor$}
->>>>>>> faniaP-master
 \end{algorithmic}
 \caption{Definici\'on de $minimax$}
 \label{minimax}
 \end{algorithm}
 
 
-<<<<<<< HEAD
 
-%%%%generacion de los posibles movimientos%%%%%
+\section{Complejidad.}
 
-\begin{algorithm}
-\begin{algorithmic}[1]
-\ENSURE una gr\'afica de los posibles movimientos del jugador
-\FORALL{$\nu$ $\in$ $V_{jugador}$}
-\IF{$\nu$ $tiene VecinoVacio()$}
-\STATE{$v.avanza(g.node)$}
-\RETURN{$g'$}
-\ELSE 
-\STATE {$posiblesMovimientos(Jugador 2, g)$}
-\ENDIF
-\ENDFOR
-\end{algorithmic}
-\caption{Genera los posibles movimientos del jugador}
-\label{c3}
-\end{algorithm}
+Procederemos a hacer el an\'alisis de complejidad para las funciones antes definidas, empecemos con la funci\'on \textbf{invaciones.}$^{\ref{invasiones}}$\\
+\textit{Invaciones:}\\
+En las primeras 3 lineas de c\'odigo es f\'acil observar que la complejidad es constante, por lo que obtenemos un $O(1)$.\\
+Continuando con el an\'alisis observamos que asegurar el estado de \textit{"no visitado"} de cada nodo es de orden $O(n)$ pues eso se consigue visitando cada nodo en la gr\'afica.
+Continuando as\'i en el ciclo \textit{while} y dado que \'este tiene contenido un ciclo \textit{for}, se observa que entonces la 
+complejidad es del orden $O (\nu + \epsilon)$.\\
+
+Continuemos con el algoritmo \textbf{Reforzamiento.}$^{\ref{reforzamientos} }$\\
+\textit{Reforzamiento:}\\
+El algoritmo de \textit{reforzamiento} tenemos que la secci\'on para visitar todos los nodos de la gr\'afica es de orden $O(n)$.
+Continuamos con la secci\'on del ciclo \textit{while} y dado que dentro del \'este tiene un ciclo \textit{for} vemos nuevamente que tenemos una complejidad de $O(\nu + \epsilon)$.\\
 
 
-=======
->>>>>>> faniaP-master
 
-\section{Especificaciones del programa.}
 
-La implementaci\'on concreta del proyecto se ha realizado en el lenguaje de programaci\'on \textbf{\textit{Java}}\cite{JAVA} que se ha optado por que \textit{Escribir ventajas de java y por que hemos optado por \'el}\\
-
-Una vez aclarado esto, introduciremos la representaci\'on del territorio por medio de un archivo llamado \textit{"Territorio.xml"} en el cual obtenemos las ventajas de que \'este nos brinda una estructura la cual nos permite adaptar informaci\'on de manera independiente al manejo de \'esta \cite{xml}. As\'i el territorio del juego en el que cada pa\'is tendr\'a una etiqueta que lo represente y dentro de \'esta estar\'an especificados los atributos de cada pa\'is.\\
-
-De esta, hemos seccionado a los pa\'ises en una peque\~na base de datos. As\'i que usaremos la interfaz \textit{JAXP}\cite{JAXP}
 
 \section{Conclusiones.}
 Informar las conclusiones que hemos encontrado en nuestra implementaci\'on.\\
@@ -345,7 +390,10 @@ Informar las conclusiones que hemos encontrado en nuestra implementaci\'on.\\
 % %Toda la bibliografía consultada debe de estar anexada en el archivo
 % %referencias.bib 
 \newpage
+
 \bibliographystyle{plain}	
+\nocite{*}
 \bibliography{referencias.bib}{}
+
 
 \end{document}

@@ -1,9 +1,15 @@
 \begin{thebibliography}{1}
 
-\bibitem{JAXP}
-Jaxp reference implementation.
-\newblock \url{https://jaxp.java.net/}.
-\newblock 07/Noviembre/2014.
+\bibitem{informacionPerfecta}
+Informaci\'on perfecta, la teoría de juegos, microeconomía.
+\newblock \url{http://centrodeartigo.com/articulos-utiles/article_113471.html}.
+\newblock 17/Noviembre/2014.
+
+\bibitem{informacionImperfecta}
+Juegos dinámicos.
+\newblock \url{http://www.eco.uc3m.es/docencia/new_juegos/doc/2.2 Dinámicos
+  info imperfecta.pdf}.
+\newblock 17/Noviembre/2014.
 
 \bibitem{RISK}
 Parker Brothers.
@@ -11,15 +17,23 @@ Parker Brothers.
 \newblock \url{http://www.hasbro.com/common/instruct/risk.pdf}.
 \newblock 27/Octubre/2014.
 
-\bibitem{xml}
-Borland~Software Corporation.
-\newblock {\em XML Developer's Guide}.
-\newblock 1997.
+\bibitem{teoriaDeJuegos}
+Alexander Galetovic.
+\newblock Microeconomia ii.
+\newblock \url{http://www.microeconomia.org/documentos_new/apun702.pdf}.
+\newblock 17/Noviembre/2014.
 
-\bibitem{JAVA}
-ORACLE.
-\newblock Descarga gratuita de java.
-\newblock \url{https://java.com/es/download/index.jsp}.
-\newblock 06/Noviembre/2014.
+\bibitem{russell2004inteligencia}
+S.J. Russell and P.~Norvig.
+\newblock {\em Inteligencia artificial: un enfoque moderno}.
+\newblock Colecci{\'o}n de Inteligencia Artificial de Prentice Hall. Pearson
+  Educaci{\'o}n, 2004.
+
+\bibitem{minimax1}
+Bruno~L\'opez Takeyas.
+\newblock Algoritmo minimax.
+\newblock \url{http://www.itnuevolaredo.edu.mx/takeyas/Apuntes/Inteligencia
+  Artificial/Apuntes/IA/Minimax.pdf}.
+\newblock 17/Noviembre/2014.
 
 \end{thebibliography}

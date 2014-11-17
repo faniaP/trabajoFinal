@@ -1,49 +1,54 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014/dev)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: minimax_risk.aux
 The style file: plain.bst
 Database file #1: referencias.bib.bib
-Warning--to sort, need author or key in JAXP
-Warning--empty publisher in xml
-You've used 4 entries,
+I was expecting a `,' or a `}'---line 46 of file referencias.bib.bib
+ : 
+ : @book{bondy1976graph,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in informacionPerfecta
+Warning--to sort, need author or key in informacionImperfecta
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            518 strings with 4370 characters,
-and the built_in function-call counts, 830 in all, are:
-= -- 77
-> -- 22
+            527 strings with 4908 characters,
+and the built_in function-call counts, 1258 in all, are:
+= -- 123
+> -- 36
 < -- 0
-+ -- 10
-- -- 6
-* -- 27
-:= -- 137
-add.period$ -- 14
-call.type$ -- 4
-change.case$ -- 14
++ -- 16
+- -- 10
+* -- 40
+:= -- 202
+add.period$ -- 22
+call.type$ -- 6
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 33
-empty$ -- 90
-format.name$ -- 6
-if$ -- 182
+cite$ -- 8
+duplicate$ -- 47
+empty$ -- 135
+format.name$ -- 10
+if$ -- 283
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 6
 missing$ -- 2
-newline$ -- 25
-num.names$ -- 6
-pop$ -- 39
+newline$ -- 36
+num.names$ -- 8
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 17
 quote$ -- 0
-skip$ -- 21
+skip$ -- 32
 stack$ -- 0
-substring$ -- 20
-swap$ -- 4
+substring$ -- 30
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 22
 warning$ -- 2
-while$ -- 6
-width$ -- 5
-write$ -- 42
-(There were 2 warnings)
+while$ -- 8
+width$ -- 7
+write$ -- 64
+(There was 1 error message)

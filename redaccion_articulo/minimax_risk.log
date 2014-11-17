@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.5.24)  16 NOV 2014 20:44
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.10)  16 NOV 2014 21:03
->>>>>>> faniaP-master
+This is pdfTeX, Version 3.1415926-2.6-1.40.14 (TeX Live 2014/dev) (format=pdflatex 2014.5.24)  17 NOV 2014 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **minimax_risk.tex
 (./minimax_risk.tex
 LaTeX2e <2011/06/27>
-<<<<<<< HEAD
 Babel <3.9h> and hyphenation patterns for 3 languages loaded.
-=======
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
->>>>>>> faniaP-master
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -150,7 +142,6 @@ File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `draft' set `true' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -224,7 +215,6 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip44
 \algorithmicindent=\skip45
 )
-<<<<<<< HEAD
 (./spanishAlgorithmic.tex) (./minimax_risk.aux)
 \openout1 = `minimax_risk.aux'.
 
@@ -276,11 +266,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-
-
-Package hyperref Warning: Draft mode on.
-
 Package hyperref Info: Link coloring OFF on input line 12.
+
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -292,413 +279,226 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
+
+(./minimax_risk.out) (./minimax_risk.out)
+\@outlinefile=\write3
+\openout3 = `minimax_risk.out'.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Overfull \hbox (31.84947pt too wide) in paragraph at lines 28--28
+ [][] 
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--33
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-[]\OT1/ptm/b/n/17.28 Juegos con in-for-maci[]on
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
  []
 
+[1
 
-Underfull \hbox (badness 2951) in paragraph at lines 41--41
-\OT1/ptm/b/n/17.28 per-fecta. [MOD-I-FICAR
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 41--41
-\OT1/ptm/b/n/17.28 A IN-FOR-MARCI[]ON IM-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--41
-\OT1/ptm/b/n/17.28 PERFECTA Y AR-GU-
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 41--41
-\OT1/ptm/b/n/17.28 MEN-TAR EL POR QUE
- []
-
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \vbox (81.57056pt too high) has occurred while \output is active []
-
-
-[1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 50.
-
-Underfull \hbox (badness 1688) in paragraph at lines 50--54
-\OT1/ptm/m/n/12 de con-ti-nentes, es de-cir, el de-sar-rollo sera
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 40.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
-
-Overfull \hbox (54.03459pt too wide) detected at line 89
-\OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ) = []|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 106.
-
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 90.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
-[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 v:Jugador \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 116--116
-\OML/cmm/m/it/12 MAX and Jugador \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MIN$
- []
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+ [3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 126.
+put line 143.
 
-Underfull \hbox (badness 4144) in paragraph at lines 126--126
-[]\OT1/ptm/b/n/12 Pseudoc[]odigo 1 \OT1/ptm/m/n/12 Definici[]on de la funci[]on
-
+Underfull \hbox (badness 10000) in paragraph at lines 211--211
+[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 G[]:v:jugador \OT1/cmr/m/n/12 = \OML/
+cmm/m/it/12 actual and G[]:u:jugador \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 =
  []
 
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ­ in font ptmr7t!
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[4] [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 147--151
-[]$[]$ \OT1/ptm/m/n/12 es un al-go-ritmo que por
- []
-
-
-Underfull \hbox (badness 2020) in paragraph at lines 147--151
-\OT1/ptm/m/n/12 medio de una mod-i-fi-caici[]on a \OT1/ptm/m/it/12 BFS \OT1/ptm
-/m/n/12 cuenta
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 147--151
-\OT1/ptm/m/n/12 pertenecientes al ju-gador \OT1/ptm/b/n/12 MAX \OT1/ptm/m/n/12 
-y resta los
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--151
+Underfull \hbox (badness 10000) in paragraph at lines 254--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-[] []$\OML/cmm/m/it/12 puntuacion \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 puntuacion
- \OT1/cmr/m/n/12 +
- []
+LaTeX Warning: Float too large for page by 50.71883pt on input line 305.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-[] []$\OML/cmm/m/it/12 puntuacion \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 puntuacion
- \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 175--176
-[] []$\OML/cmm/m/it/12 puntuacion \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 puntuacion
- \OT1/cmr/m/n/12 +
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 178--179
-[] []$\OML/cmm/m/it/12 puntuacion \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 puntuacion
- \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 v:Jugador \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 4144) in paragraph at lines 196--196
-[]\OT1/ptm/b/n/12 Pseudoc[]odigo 2 \OT1/ptm/m/n/12 Definici[]on de la funci[]on
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
 
-LaTeX Warning: Float too large for page by 166.61024pt on input line 198.
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 202--204
-\OT1/ptm/m/n/12 Es un al-go-ritmo para \OT1/ptm/m/it/12 min-i-mizar \OT1/ptm/m/
-n/12 la p[]erdida
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--204
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
 
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 205--207
-[]\OT1/ptm/m/n/12 Como se men-cion[]o an-te-ri-or-mente dado
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
+
+ []
+
+[8] [9] [10]
+
+LaTeX Warning: Float too large for page by 21.8083pt on input line 364.
+
+
+Overfull \hbox (1.31572pt too wide) in paragraph at lines 370--376
+\OT1/ptm/m/n/12 Procederemos a hacer el an[]alisis de com-ple-ji-dad para las f
+un-ciones antes definidas,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--376
 
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 211--214
-\OT1/ptm/m/n/12 de es-pa-cio y tiempo, en-tonces la pr[]actica
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 211--214
-\OT1/ptm/m/n/12 usual es re-alizar el al-go-ritmo \OT1/ptm/m/it/12 min-i-max \O
-T1/ptm/m/n/12 de
- []
-
-
-Underfull \hbox (badness 4328) in paragraph at lines 211--214
-\OT1/ptm/m/n/12 forma re-cur-siva, tal que, vaya sim-u-lando
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--214
-
- []
-
-[3]
-Overfull \hbox (22.06212pt too wide) in paragraph at lines 231--231
-[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 movimientos:isEmpty\OT1/cmr/m/n/12 ()
- \OML/cmm/m/it/12 or profundidad \OT1/cmr/m/n/12 =|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-[] []$\OML/cmm/m/it/12 puntuacionActual \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
-\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 minimax\OT1/cmr/m/n/12 (\OM
-L/cmm/m/it/12 p \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; min; G
-; f\OT1/cmr/m/n/12 ))$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
-[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 puntuacionActual >
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-[] []$\OML/cmm/m/it/12 mejorPuntuacion \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-[] []$\OML/cmm/m/it/12 puntuacionActual \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
-[] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 puntuacionActual <
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-[] []$\OML/cmm/m/it/12 mejorPuntuacion \OT1/cmr/m/n/12 =
- []
-
-
-LaTeX Warning: Float too large for page by 120.96344pt on input line 258.
-
-
-Underfull \hbox (badness 8113) in paragraph at lines 282--282
-[]\OT1/ptm/b/n/17.28 Especificaciones del pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 377--381
 
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 286--287
-[]\OT1/ptm/m/n/12 Una vez aclarado esto, in-tro-ducire-mos la
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 286--287
-\OT1/ptm/m/n/12 archivo lla-mado \OT1/ptm/m/it/12 "Ter-ri-to-rio.xml" \OT1/ptm/
-m/n/12 en el cual
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
- []
-
-[4] (./minimax_risk.bbl
+[11] [12] (./minimax_risk.bbl
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ­ in font ptmr7t!
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
-[]\OT1/ptm/m/n/12 Jaxp ref-er-ence im-ple-men-ta-tion.
+Underfull \hbox (badness 3735) in paragraph at lines 4--7
+[]\OT1/ptm/m/n/12 Informaci[]on per-fecta, la teora de jue-gos, mi-croe-conoma.
+  []$\OT1/pcr/m/n/12 http :
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
-\OT1/pcr/m/n/12 https : / / jaxp . java . net/$\OT1/ptm/m/n/12 .
+\OT1/pcr/m/n/12 / / centrodeartigo . com / articulos-[]utiles / article _
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¡ in font ptmr7t!
+Missing character: There is no Ì in font pcrr7t!
+Missing character: There is no  in font pcrr7t!
+
+Underfull \hbox (badness 3240) in paragraph at lines 9--13
+[]\OT1/ptm/m/n/12 Juegos din-mi-cos.  []$\OT1/pcr/m/n/12 http : / / www . eco .
+ uc3m . es / docencia / new _
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 9--13
-\OT1/ptm/m/n/12 rior game.  $\OT1/pcr/m/n/12 http : / / www . hasbro .
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+[]\OT1/ptm/m/n/12 Alexander Gale-tovic.  Mi-croe-cono-mia ii.  []$\OT1/pcr/m/n/
+12 http : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
-\OT1/pcr/m/n/12 com / common / instruct / risk . pdf$\OT1/ptm/m/n/12 .
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+\OT1/pcr/m/n/12 microeconomia . org / documentos _ new / apun702 . pdf$[]\OT1/p
+tm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 20--24
-[]\OT1/ptm/m/n/12 ORACLE.  Descarga gra-tuita de java.
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+[]\OT1/ptm/m/n/12 Bruno L[]opez Takeyas.  Al-go-ritmo min-i-max.  []$\OT1/pcr/m
+/n/12 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-\OT1/pcr/m/n/12 https : / / java . com / es / download /
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+\OT1/pcr/m/n/12 / / www . itnuevolaredo . edu . mx / takeyas / Apuntes /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+\OT1/pcr/m/n/12 InteligenciaArtificial / Apuntes / IA / Minimax . pdf$[]\OT1/pt
+m/m/n/12 .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 399.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 399.
  (./minimax_risk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 300.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 399.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 399.
+Package rerunfilecheck Info: File `minimax_risk.out' has not changed.
+(rerunfilecheck)             Checksum: BC04406F6D56815BB3A19921ACB150FC;729.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 399.
  ) 
 Here is how much of TeX's memory you used:
- 5870 strings out of 494999
- 85340 string characters out of 6180801
- 175289 words of memory out of 5000000
- 9004 multiletter control sequences out of 15000+600000
- 32385 words of font info for 74 fonts, out of 8000000 for 9000
+ 6088 strings out of 494999
+ 88147 string characters out of 6180801
+ 181477 words of memory out of 5000000
+ 9017 multiletter control sequences out of 15000+600000
+ 34069 words of font info for 76 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
- 29i,9n,26p,504b,668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,28p,638b,875s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on minimax_risk.pdf (5 pages, 153677 bytes).
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on minimax_risk.pdf (13 pages, 158103 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 370 compressed objects within 4 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-=======
-(./spanishAlgorithmic.tex) (./minimax_risk.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 <
-      <<<<<< HEAD
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.31 <
-      <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- 
-Here is how much of TeX's memory you used:
- 5091 strings out of 493307
- 74177 string characters out of 6139905
- 155853 words of memory out of 5000000
- 8542 multiletter control sequences out of 15000+600000
- 3938 words of font info for 15 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
- 29i,0n,26p,244b,43s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
->>>>>>> faniaP-master

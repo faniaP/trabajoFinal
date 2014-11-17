@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1416190276 "minimax_risk.tex" "minimax_risk.pdf" "minimax_risk" 1416190276
+["pdflatex"] 1416193406 "minimax_risk.tex" "minimax_risk.pdf" "minimax_risk" 1416193406
   "/etc/texmf/web2c/texmf.cnf" 1405019819 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -36,7 +36,7 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1374751034 31103 dbc49c70ca9e47fd7f4e40a14691afe7 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1405020026 3823577 bfa02123e585043236794842ed177d07 ""
   "minimax_risk.aux" 1416183822 3440 c541dedadeb5e45b5a79e98ba46a591a ""
-  "minimax_risk.tex" 1416190274 11451 a472f84747734249877171a38740b6ff ""
+  "minimax_risk.tex" 1416193403 11634 1030c8144dc7b0c938b0c1128d2c2ade ""
   "spanishAlgorithmic.tex" 1415744921 1303 78324d2b3c739ae3a5d8f62ec3b9b029 ""
   (generated)
   "minimax_risk.aux"

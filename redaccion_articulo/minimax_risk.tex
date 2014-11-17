@@ -9,6 +9,7 @@
 \usepackage{algorithmic}
 \input{spanishAlgorithmic}
 
+
 \begin{document}
 
 \title{\textbf{Implementaci\'on de Risk con algoritmo de Minimax.}}
@@ -61,13 +62,52 @@ Sin embargo mantendremos las dem\'as condiciones iniciales con respecto a las tr
 
 Teniendo ya esto definido, entonces, cada jugador tendr\'a un ejercito inicial de 35 tropas.
 
-%% necesitamos agregar el número de jugadores con los que decidimos acotarlo%%%%
-%% tambien necesitamos agregar lo de las tropas cuando reforamos los paises%%%
-
 \section{Descripci\'on del agente.}
-Aqu\'i es donde describimos el comportamiento del agente.
-%%% tipo de agente del proyecto%%%
-%%% sería un agente basado en modelo%%%
+
+En el entorno de nuestro problema, tenemos un \textit{agente reactivo basado en modelo}.
+Ya que el agente depende de lo que ha \textit{``vivido"} con anterioridad y con ello, puede
+\textit{``discernir"} del mundo actual que no conoce.
+
+\section{Generaci\'on de movimientos}
+
+\subsection{Reforzamientos}
+
+Es m\'as f\'acil comenzar aqu\'i, ya que \'unicamente hay que tomar los v\'ertices de cada jugador
+y aumentar el n\'umero de tropas en 2.\\
+
+Para lograr esto, por cada nodo existir\'a una nueva gr\'afica con el nuevo n\'umero de tropas, lo
+cual significa que habr\'a tantas nuevas gr\'aficas como paises pertenezcan a cada jugador; para
+esto utilizaremos \textit{BFS}.
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+\REQUIRE Gr\'afica $G$ que representa el tablero actual,Jugador $actual$
+\ENSURE Lista con todos los posibles reforzamientos
+\STATE{$Queue$ $q$}
+\STATE{$List reforzamientos$}
+\FORALL{$v \in G$}
+\STATE{$v.visitado = FALSE$}
+\ENDFOR
+\STATE{$v_{1}.visitado = FALSE$}\COMMENT{$v_{1}$ es el pa\'is con identificador 1}
+\STATE{$v_{1}.tropas = v_{1}.tropas+2$}
+\STATE{$reforzamientos.add(G)$}
+\STATE{$q.enqeue(v_{1})$}
+\WHILE{$q.isNotEmpty()$}
+\STATE{$v = q.remove()$}
+\FORALL{$u \in Vecinos(v)$}
+\IF{$u.visitado = FALSE$}
+\STATE{$u.tropas = u.tropas+2$}
+\STATE{$reforzamientos.add(G)$}
+\STATE{$u.visitado = TRUE$}
+\STATE{$q.enqeue(u)$}
+\ENDIF
+\ENDFOR
+\ENDWHILE
+\RETURN $reforzamientos$
+\end{algorithmic}
+\caption{Definici\'on de la funci\'on $reforzamientos$}
+\label{reforzamientos}
+\end{algorithm}
 
 \section{Funci\'on de evaluaci\'on.}
 
@@ -149,6 +189,8 @@ las tropas y paises de cada jugador, suma los pertenecientes al jugador \textbf{
 \textbf{min}, tambi\'en por cada pa\'is de \textbf{MAX} resta los vecinos que pertenezcan a \textbf{min}, por otra
 parte bajo esa misma idea compara el n\'umero de tropas.\\
 
+
+
 \begin{algorithm}
 \begin{algorithmic}[1]
 \REQUIRE La gr\'afica que representa el tablero
@@ -197,6 +239,9 @@ parte bajo esa misma idea compara el n\'umero de tropas.\\
 \label{reforzaAtaca}
 \end{algorithm}
 
+
+
+
 \section{Minimax}
 
 Es un algoritmo para \textit{minimizar} la p\'erdida \textit{m\'axima} esperada en juegos de adversarios con
@@ -211,8 +256,6 @@ nodo del \'arbol y hacer un recorrido \textit{DFS} para obtener la mejor estrate
 Dado que esto requiere una gran cantidad de espacio y tiempo, entonces la pr\'actica usual es realizar
 el algoritmo \textit{minimax} de forma recursiva, tal que, vaya simulando la creaci\'on de las ramas y despu\'es
 asginarles su valor y por \'ultimo obtener la mejor estrateg\'ia.\\
-
-%%%% Este  hay que modificarlo y dice fernando que el lo 
 
 \begin{algorithm}
 \begin{algorithmic}[1]
@@ -248,9 +291,14 @@ funcion de evaluacion $f$
 \ENDIF
 \ENDFOR
 <<<<<<< HEAD
+<<<<<<< HEAD
 \ENDIF
 \RETURN{$mejor$}
 =======
+>>>>>>> faniaP-master
+=======
+\ENDIF
+\RETURN{$mejor$}
 >>>>>>> faniaP-master
 \end{algorithmic}
 \caption{Definici\'on de $minimax$}
@@ -258,6 +306,7 @@ funcion de evaluacion $f$
 \end{algorithm}
 
 
+<<<<<<< HEAD
 
 %%%%generacion de los posibles movimientos%%%%%
 
@@ -278,6 +327,8 @@ funcion de evaluacion $f$
 \end{algorithm}
 
 
+=======
+>>>>>>> faniaP-master
 
 \section{Especificaciones del programa.}
 

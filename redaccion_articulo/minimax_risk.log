@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.14)  16 NOV 2014 15:50
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.10)  16 NOV 2014 17:25
+>>>>>>> faniaP-master
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **minimax_risk.tex
 (./minimax_risk.tex
 LaTeX2e <2011/06/27>
+<<<<<<< HEAD
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+=======
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+>>>>>>> faniaP-master
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -219,21 +227,21 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (./spanishAlgorithmic.tex) (./minimax_risk.aux)
 \openout1 = `minimax_risk.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -271,7 +279,7 @@ e
 
 Package hyperref Warning: Draft mode on.
 
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 12.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -280,59 +288,59 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 []\OT1/ptm/b/n/17.28 Juegos con in-for-maci[]on
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 42--42
+Underfull \hbox (badness 2951) in paragraph at lines 41--41
 \OT1/ptm/b/n/17.28 per-fecta. [MOD-I-FICAR
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 42--42
+Underfull \hbox (badness 1127) in paragraph at lines 41--41
 \OT1/ptm/b/n/17.28 A IN-FOR-MARCI[]ON IM-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 \OT1/ptm/b/n/17.28 PERFECTA Y AR-GU-
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 42--42
+Underfull \hbox (badness 1365) in paragraph at lines 41--41
 \OT1/ptm/b/n/17.28 MEN-TAR EL POR QUE
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -345,56 +353,83 @@ Overfull \vbox (81.57056pt too high) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 50.
 
-Underfull \hbox (badness 1688) in paragraph at lines 51--55
+Underfull \hbox (badness 1688) in paragraph at lines 50--54
 \OT1/ptm/m/n/12 de con-ti-nentes, es de-cir, el de-sar-rollo sera
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 
+<<<<<<< HEAD
 Overfull \hbox (54.03459pt too wide) detected at line 86
 \OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ) = []|
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
+=======
+Underfull \hbox (badness 1152) in paragraph at lines 74--75
+\OT1/ptm/m/n/12 El tablero de juego es-tar[]a rep-re-sen-tado por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+>>>>>>> faniaP-master
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
+=======
+Underfull \hbox (badness 2478) in paragraph at lines 76--77
+[]\OT1/ptm/m/n/12 Para in-tro-ducir la funci[]on de eval-u-aci[]on
+>>>>>>> faniaP-master
  []
 
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 103.
 
+<<<<<<< HEAD
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+>>>>>>> faniaP-master
 
 Underfull \hbox (badness 10000) in paragraph at lines 113--113
 [] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 v:Jugador \OT1/cmr/m/n/12 =
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1881) in paragraph at lines 113--113
 \OML/cmm/m/it/12 MAX and Jugador \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MIN$
+=======
+Underfull \hbox (badness 1127) in paragraph at lines 85--87
+\OT1/ptm/m/n/12 pertenecientes a la gr[]afica y los de-no-ta-mos
+>>>>>>> faniaP-master
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 123.
 
+<<<<<<< HEAD
 Underfull \hbox (badness 4144) in paragraph at lines 123--123
 []\OT1/ptm/b/n/12 Pseudoc[]odigo 1 \OT1/ptm/m/n/12 Definici[]on de la funci[]on
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+>>>>>>> faniaP-master
 
  []
 
@@ -405,12 +440,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
+<<<<<<< HEAD
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+>>>>>>> faniaP-master
 
 Underfull \hbox (badness 2591) in paragraph at lines 144--148
 []$[]$ \OT1/ptm/m/n/12 es un al-go-ritmo que por
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 2020) in paragraph at lines 144--148
 \OT1/ptm/m/n/12 medio de una mod-i-fi-caici[]on a \OT1/ptm/m/it/12 BFS \OT1/ptm
 /m/n/12 cuenta
@@ -445,6 +485,22 @@ Underfull \hbox (badness 1067) in paragraph at lines 172--173
  \OT1/cmr/m/n/12 +
  []
 
+=======
+Underfull \hbox (badness 3428) in paragraph at lines 91--92
+[]\OT1/ptm/m/n/12 Con es-tas ob-ser-va-ciones nos per-miti-mos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+[2]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 124.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+>>>>>>> faniaP-master
 
 Underfull \hbox (badness 1033) in paragraph at lines 175--176
 [] []$\OML/cmm/m/it/12 puntuacion \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 puntuacion
@@ -452,6 +508,7 @@ Underfull \hbox (badness 1033) in paragraph at lines 175--176
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 177--177
 [] []\OT1/ptm/b/n/12 si $\OML/cmm/m/it/12 v:Jugador \OT1/cmr/m/n/12 =
  []
@@ -471,6 +528,9 @@ Underfull \hbox (badness 1490) in paragraph at lines 199--201
 n/12 la p[]erdida
  []
 
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+>>>>>>> faniaP-master
 
 Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
@@ -482,6 +542,7 @@ Underfull \hbox (badness 6592) in paragraph at lines 202--204
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
@@ -560,39 +621,70 @@ LaTeX Warning: Float too large for page by 108.65884pt on input line 250.
 
 
 Underfull \hbox (badness 8113) in paragraph at lines 254--254
+=======
+Underfull \hbox (badness 8113) in paragraph at lines 168--168
+>>>>>>> faniaP-master
 []\OT1/ptm/b/n/17.28 Especificaciones del pro-
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 256--257
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+>>>>>>> faniaP-master
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1253) in paragraph at lines 258--259
+=======
+Underfull \hbox (badness 1253) in paragraph at lines 172--173
+>>>>>>> faniaP-master
 []\OT1/ptm/m/n/12 Una vez aclarado esto, in-tro-ducire-mos la
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1067) in paragraph at lines 258--259
+=======
+Underfull \hbox (badness 1067) in paragraph at lines 172--173
+>>>>>>> faniaP-master
 \OT1/ptm/m/n/12 archivo lla-mado \OT1/ptm/m/it/12 "Ter-ri-to-rio.xml" \OT1/ptm/
 m/n/12 en el cual
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 258--259
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+>>>>>>> faniaP-master
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 [4] (./minimax_risk.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+ []
+
+>>>>>>> faniaP-master
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+(./minimax_risk.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 4--7
@@ -625,6 +717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
  []
 
 )
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
  [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
@@ -654,6 +747,38 @@ exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
 Output written on minimax_risk.pdf (5 pages, 136734 bytes).
+=======
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+ (./minimax_risk.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+ ) 
+Here is how much of TeX's memory you used:
+ 5843 strings out of 493307
+ 84909 string characters out of 6139905
+ 169317 words of memory out of 5000000
+ 9226 multiletter control sequences out of 15000+600000
+ 30254 words of font info for 69 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 29i,9n,26p,504b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on minimax_risk.pdf (4 pages, 143207 bytes).
+>>>>>>> faniaP-master
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream

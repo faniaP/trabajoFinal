@@ -9,7 +9,6 @@
 \usepackage{algorithmic}
 \input{spanishAlgorithmic}
 
-
 \begin{document}
 
 \title{\textbf{Implementaci\'on de Risk con algoritmo de Minimax.}}
@@ -62,9 +61,13 @@ Sin embargo mantendremos las dem\'as condiciones iniciales con respecto a las tr
 
 Teniendo ya esto definido, entonces, cada jugador tendr\'a un ejercito inicial de 35 tropas.
 
+%% necesitamos agregar el número de jugadores con los que decidimos acotarlo%%%%
+%% tambien necesitamos agregar lo de las tropas cuando reforamos los paises%%%
+
 \section{Descripci\'on del agente.}
 Aqu\'i es donde describimos el comportamiento del agente.
-
+%%% tipo de agente del proyecto%%%
+%%% sería un agente basado en modelo%%%
 
 \section{Funci\'on de evaluaci\'on.}
 
@@ -209,6 +212,8 @@ Dado que esto requiere una gran cantidad de espacio y tiempo, entonces la pr\'ac
 el algoritmo \textit{minimax} de forma recursiva, tal que, vaya simulando la creaci\'on de las ramas y despu\'es
 asginarles su valor y por \'ultimo obtener la mejor estrateg\'ia.\\
 
+%%%% Este  hay que modificarlo y dice fernando que el lo 
+
 \begin{algorithm}
 \begin{algorithmic}[1]
 \REQUIRE Entero $p$ que representa la profundiad del \'arbol, Jugador $actual$, gr\'afica $G$ que representa el tablero actual,
@@ -242,14 +247,38 @@ funcion de evaluacion $f$
 \ENDIF
 \ENDIF
 \ENDFOR
+<<<<<<< HEAD
 \ENDIF
 \RETURN{$mejor$}
+=======
+>>>>>>> faniaP-master
 \end{algorithmic}
 \caption{Definici\'on de $minimax$}
 \label{minimax}
 \end{algorithm}
 
 
+<<<<<<< HEAD
+=======
+%%%%generacion de los posibles movimientos%%%%%
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+\ENSURE una gr\'afica de los posibles movimientos del jugador
+\FORALL{$\nu$ $\in$ $V_{jugador}$}
+\IF{$\nu$ $tiene VecinoVacio()$}
+\STATE{$v.avanza(g.node)$}
+\RETURN{$g'$}
+\ELSE 
+\STATE {$posiblesMovimientos(Jugador 2, g)$}
+\ENDIF
+\ENDFOR
+\end{algorithmic}
+\caption{Genera los posibles movimientos del jugador}
+\label{c3}
+\end{algorithm}
+
+>>>>>>> faniaP-master
 
 \section{Especificaciones del programa.}
 

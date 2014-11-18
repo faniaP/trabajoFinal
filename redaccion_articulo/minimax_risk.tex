@@ -56,7 +56,12 @@ Dado que los agentes basados en modelos son eficientes al momento de manejar vis
 
 Observemos el siguiente diagrama:
 
-
+\begin{figure}[htp]
+\centering
+\includegraphics{agente-diagrama.pdf}
+\caption{Diagrama en el cu\'al se describe al agente.}
+\label{agente_modelos}
+\end{figure}
 
 
 
@@ -367,6 +372,10 @@ asginarles su valor y por \'ultimo obtener la mejor estrateg\'ia.\\
 
 \section{Complejidad.}
 
+\textbf{Notacion}\\
+$\nu$ denota a la cardinalidad del conjunto de v\'ertices \cite{bondy1976graph}.\\
+$\epsilon$ denota a la cardinalidad del conjunto de aristas \cite{bondy1976graph}.\\
+
 Procederemos a hacer el an\'alisis de complejidad para las funciones antes definidas, empecemos con la funci\'on \textbf{invaciones.}$^{\ref{invasiones}}$\\
 \textit{Invaciones:}\\
 En las primeras 3 lineas de c\'odigo es f\'acil observar que la complejidad es constante, por lo que obtenemos un $O(1)$.\\
@@ -374,17 +383,31 @@ Continuando con el an\'alisis observamos que asegurar el estado de \textit{"no v
 Continuando as\'i en el ciclo \textit{while} y dado que \'este tiene contenido un ciclo \textit{for}, se observa que entonces la 
 complejidad es del orden $O (\nu + \epsilon)$.\\
 
-Continuemos con el algoritmo \textbf{Reforzamiento.}$^{\ref{reforzamientos} }$\\
+Con el algoritmo \textbf{Reforzamiento.}$^{\ref{reforzamientos} }$\\
 \textit{Reforzamiento:}\\
 El algoritmo de \textit{reforzamiento} tenemos que la secci\'on para visitar todos los nodos de la gr\'afica es de orden $O(n)$.
 Continuamos con la secci\'on del ciclo \textit{while} y dado que dentro del \'este tiene un ciclo \textit{for} vemos nuevamente que tenemos una complejidad de $O(\nu + \epsilon)$.\\
 
+Con el algoritmo \textbf{Ataques}$^{\ref{ataques} }$\\
+Al ser un algoritmo basado \'unicamente en \textit{BFS}, de hecho, son s\'olo unas l\'ineas modificadas de este, su complejidad
+corresponde al de dicho algoritmo, el m\'etodo $generaDados$ es de orden constante ya que generamos dos n\'umeros aleatorios
+y se restan, todo esto es constante, por lo que el metodo $ataques$ tendr\'a una complejidad de $O(\nu + \epsilon)$.\\
 
-
-
+Para el algoritmo \textbf{minimax}$^{\ref{ataques} }$\\
+Sabemos que la complejidad del algoritmo \textit{minimax} es $O(b^{n})$ donde b es el factor de ramificaci\'on y n la profundidad del 
+\'arbol \cite{russell2004inteligencia}, en nuestro caso habr\'a tantas ramas como la gr\'afica tiene v\'ertices y aristas debido
+a todos los posibles reforzamientos, invasiones y ataques, 
+por lo que la complejidad de \textit{minimax} en este caso es de $O((\nu+\epsilon)^{n})$ en el peor de los casos.
 
 \section{Conclusiones.}
-Informar las conclusiones que hemos encontrado en nuestra implementaci\'on.\\
+Se comenz\'o por una implementaci\'on en el lenguaje de programaci\'on \textit{JAVA} pero al momento de querer
+realizar la lista de gr\'aficas de todos los posibles movimientos, se volvi\'o intratable en el sentido de que
+generar tales gr\'aficas requiere de un gran espacio en memoria.\\
+Acto seguido se opt\'o por pasar al lenguaje de programaci\'on \textit{Python} por su sencillez de la construcci\'on
+de la gr\'afica que representa al tablero y sus funciones predefinidas sobre tal gr\'afica, pero  se tuvo el mismo
+problema que \textit{JAVA}.\\
+Implementar el juego de risk acotado, es posible, sin embargo a\'un con estas restricciones, es muy ineficiente para la
+computadora, por la verificaci\'on de cada gr\'afica que representa a los movimientos.\\
 
 
 % %Toda la bibliografía consultada debe de estar anexada en el archivo
